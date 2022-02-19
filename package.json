@@ -1,0 +1,35 @@
+{
+  "name": "weathercli",
+  "version": "1.0.0",
+  "description": "CLI tool to retrieve weather",
+  "main": "index.js",
+  "os": [
+    "windows",
+    "linux"
+  ],
+  "engines": {
+    "node": ">16"
+  },
+  "funding": "https://test.loc",
+  "man": [
+    "./README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Timur Kayzer",
+  "license": "ISC",
+  "homepage": "test.loc",
+  "repository": {
+    "type": "git",
+    "url": "https://test.loc"
+  },
+  "bugs": {
+    "url": "https://test.loc",
+    "email": "timurkayzer@gmail.com"
+  }
+}
