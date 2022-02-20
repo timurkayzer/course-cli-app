@@ -4,7 +4,7 @@
   "description": "CLI tool to retrieve weather",
   "main": "index.js",
   "os": [
-    "windows",
+    "win32",
     "linux"
   ],
   "engines": {
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://test.loc",
     "email": "timurkayzer@gmail.com"
-  }
+  },
+  "dependencies": {
+    "axios": "^0.26.0"
+  },
+  "devDependencies": {}
 }
