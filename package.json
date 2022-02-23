@@ -2,7 +2,11 @@
   "name": "weathercli",
   "version": "1.0.0",
   "description": "CLI tool to retrieve weather",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "os": [
     "win32",
     "linux"
@@ -33,7 +37,9 @@
     "email": "timurkayzer@gmail.com"
   },
   "dependencies": {
-    "axios": "^0.26.0"
+    "axios": "^0.26.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   },
   "devDependencies": {}
 }
