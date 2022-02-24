@@ -6,7 +6,7 @@ export function printError(e) {
 }
 
 export function printSuccess(e) {
-    console.log(dedent(chalk.bgGreen('SUCCESS '), e));
+    console.log(dedent(chalk.bgGreen('SUCCESS'), ' ' + e));
 }
 
 export function printHelp() {
