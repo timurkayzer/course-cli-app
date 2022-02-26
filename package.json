@@ -1,5 +1,5 @@
 {
-  "name": "kaiser-weathercli",
+  "name": "weathercli-kaiser-demo",
   "version": "1.0.0",
   "description": "CLI tool to retrieve weather",
   "main": "weather.js",
@@ -7,17 +7,7 @@
     "weather": "weather.js"
   },
   "type": "module",
-  "os": [
-    "win32",
-    "linux"
-  ],
-  "engines": {
-    "node": ">16"
-  },
-  "funding": "https://test.loc",
-  "man": [
-    "./README.md"
-  ],
+  "funding": "https://github.com/timurkayzer/course-cli-app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,19 +17,18 @@
   ],
   "author": "Timur Kayzer",
   "license": "ISC",
-  "homepage": "test.loc",
+  "homepage": "https://github.com/timurkayzer/course-cli-app",
   "repository": {
     "type": "git",
-    "url": "https://test.loc"
+    "url": "https://github.com/timurkayzer/course-cli-app"
   },
   "bugs": {
-    "url": "https://test.loc",
     "email": "timurkayzer@gmail.com"
   },
   "dependencies": {
-    "axios": "^0.26.0",
-    "chalk": "^5.0.0",
-    "dedent-js": "^1.0.1"
+    "axios": "0.26.0",
+    "chalk": "5.0.0",
+    "dedent-js": "1.0.1"
   },
   "devDependencies": {}
 }
