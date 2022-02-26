@@ -16,6 +16,5 @@ export async function getWeather(city) {
 
 
     const httpRes = await axios.get(url.toString());
-    console.log(httpRes.data);
-
+    return httpRes.data;
 }

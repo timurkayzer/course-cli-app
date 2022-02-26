@@ -8,8 +8,6 @@ import { getValue, saveKeyValue } from './services/storage-service.js';
 async function initCli() {
     const args = getArgs();
 
-    await getForeCast();
-
     if (args.t) {
         saveToken(args.t);
     }
@@ -21,13 +19,33 @@ async function initCli() {
     if (args.h) {
         printHelp();
     }
+
+    if (Object.keys(args).length == 0) {
+        await getForeCast();
+    }
 }
 
 async function getForeCast() {
     try {
         const city = await getValue('city');
         const weather = await getWeather(city);
-        console.log(weather);
+        const forecastObj = {};
+
+        forecastObj.temperature = Math.round(weather.main.temp);
+        forecastObj.description = weather.weather[0].description;
+        forecastObj.wind = Math.round(weather.wind.speed);
+        forecastObj.city = weather.name;
+        forecastObj.humidity = weather.main.humidity;
+
+        printSuccess(`
+        Погода в городе ${forecastObj.city}:
+        Температура: ${forecastObj.temperature}'C
+        Влажность: ${forecastObj.humidity}%
+        Скорость ветра: ${forecastObj.wind} м/с
+        Погода: ${forecastObj.description}
+        `);
+
+
     }
     catch (e) {
         if (e.response?.status == 401) {

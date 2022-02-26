@@ -1,12 +1,12 @@
 import chalk from 'chalk';
 import dedent from 'dedent-js';
 
-export function printError(e) {
-    console.log(dedent(chalk.bgRed('ERROR '), e));
+export function printError(error) {
+    console.log(dedent(chalk.bgRed('ERROR ') + error));
 }
 
-export function printSuccess(e) {
-    console.log(dedent(chalk.bgGreen('SUCCESS'), ' ' + e));
+export function printSuccess(message) {
+    console.log(dedent(chalk.bgGreen('SUCCESS') + ' ' + message));
 }
 
 export function printHelp() {

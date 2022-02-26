@@ -1,5 +1,5 @@
 {
-  "name": "weathercli",
+  "name": "kaiser-weathercli",
   "version": "1.0.0",
   "description": "CLI tool to retrieve weather",
   "main": "weather.js",
